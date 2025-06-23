@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>个人信息收集清单 - 织个网</title>
+    <style>
+        body {
+            margin: 12px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 0.35rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .content p,
+        .content ul {
+            font-size: 0.26rem;
+            text-indent: 0.52rem;
+        }
+
+        .content ul {
+            font-size: 0.26rem;
+            text-indent: 0;
+        }
+
+        .subtitle {
+            font-size: 0.28rem;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        // // rem定位
+        // (function (doc, win) {
+        //     var docEl = doc.documentElement,
+        //         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        //         recalc = function () {
+        //             var clientWidth = docEl.clientWidth;
+        //             if (!clientWidth) return;
+        //             if (clientWidth >= 640) {
+        //                 docEl.style.fontSize = '100px';
+        //             } else {
+        //                 docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+        //             }
+        //         };
+        //     recalc();
+        // })(document, window);
+
+        const docEl = document.documentElement
+        const fontSizeBase = 96
+        const gapWidth = 640
+        function getSize() {
+            var clientWidth = docEl.clientWidth
+            if (!clientWidth) return;
+            let scale = clientWidth / gapWidth
+            if (scale > 1) scale = 1
+            docEl.style.fontSize = fontSizeBase * scale + 'px';
+        }
+        getSize()
+        window.addEventListener('resize', getSize)
+        setTimeout(() => {
+            docEl.style.transition = '0.3s all';
+        }, 1)
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        个人信息收集清单
+    </div>
+
+    <div class="content">
+        <p style="margin-bottom: 0;">更新日期：2025年06月24日</p>
+        <p style="margin-top: 0;">生效日期：2025年06月24日</p>
+
+
+        <p>本清单仅适用于武汉脚印猫科技有限公司（以下简称「我们」）的产品「织个网」及其相关服务。</p>
+
+        <p>
+            在收集并处理您的个人信息时，我们将<b>严格遵守《个人信息保护法》、《数据安全法》、《网络安全法》等法律法规和监管部门规章要求</b>。同时，我们将格守以下原则，保护您的个人信息：<b>权责一致原则、目的明确原则、选择同意原则、最小必要原则、确保安全原则、主体参与原则、公开透明原则。</b>
+        </p>
+        <p>
+            我们深知个人信息对您的重要性，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。
+        </p>
+        <p>
+            同时，我们承诺，我们在用户使用过程中，不会侵害公民、法人和其他组织的合法权益，不会危害国家安全、荣誉和利益。
+        </p>
+        <div class="subtitle">（一）我们在向您提供核心业务功能时收集的信息</div>
+        <p>
+            在您使用本产品的网络服务或访问网页时，为实现相关产品的核心业务功能，在您使用我们提供的产品或服务时，在征得您的授权后，我们需要向您直接收集个人信息。以下将详细列出为实现我们的核心业务功能所需收集的个人信息。请您注意，若您拒绝我们为实现核心业务功能收集必要的个人信息，您可能无法使用该服务。我们可能会接收并记录您的浏览器和设备上的信息，包括但不限于您的服务日志信息、IP地址、地理位置、访问日期和时间、软硬件特征信息等数据，用于鉴别用户身份、记录系统故障和分析系统故障时产生的原因、开展内部审计等，以促进改善、优化我们的产品、服务。
+        </p>
+        <p>
+            我们可能会在应用使用过程中以及应用在“后台”或“静默”状态下，收集您使用相关产品的设备信息（收集内容包括但不限于以下列出信息），以便保障网络安全以及为您提供相关产品服务及信息展示的最优方案。例如：
+        </p>
+        <p>
+            <b>设备参数及系统信息：</b>设备型号、系统属性、操作系统版本、分辨率
+        </p>
+        <p>
+            <b>设备唯一标识信息：</b>设备唯一标识符（IMEI、MAC 地址、Android ID、设备硬件序列号等）
+        </p>
+        <p>
+            <b>网络信息：</b>IP地址、BSSID、SN、SSID、运营商信息、联网方式
+        </p>
+        <p>
+            <b>设备运行状态信息：</b>设备设置、安装列表或正在进程的应用信息
+        </p>
+        <p>
+            <b>应用运行日志：</b>经匿名化、去隐私化处理的应用运行日志
+        </p>
+        <p>
+            此外，在您使用浏览信息功能的过程中，基于保障您使用我们服务过程中的网络安全，维护产品正常运行和改进我们的信息服务的目的，我们还需要记录您使用本产品的操作情况，因此我们会收集您使用本产品时的日志信息，包括您输入的搜索关键词信息和点击的链接，您浏览的内容，您使用的语言、访问的日期和时间、您请求的网页记录、操作系统、软件版本号、登录IP信息。
+        </p>
+        <div class="subtitle">（二）我们在向您提供服务时调用的设备权限信息</div>
+        <p>
+            本产品在提供服务过程中，会调用您的一些设备权限。以下权限仅在用户主动选择时才获取，若用户不使用相关功能，应用不会主动获取对应权限
+        </p>
+        <p>
+            <b>存储权限：</b>用户选择手机中的文件（例如图片、视频、音频），或将相关文件保存至本地时，需要此权限
+        </p>
+        <p>
+            <b>麦克风权限：</b>添加语音笔记时需要此权限
+        </p>
+        <p>
+            <b>精准位置信息：</b>当您主动选择在笔记中添加<b>精确定位</b>坐标或其他位置相关功能时，我们将收集您的<b>精准</b>位置信息
+        </p>
+        <p>
+            <b>粗略位置信息：</b>当您主动选择在笔记中添加<b>模糊定位</b>坐标或其他位置相关功能时，我们将收集您的<b>粗略</b>位置信息
+        </p>
+    </div>
+
+</body>
+
+</html>
