@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>第三方信息共享清单 - 织个网</title>
+    <style>
+        body {
+            margin: 12px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 0.35rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .content p,
+        .content ul {
+            font-size: 0.26rem;
+            text-indent: 0.52rem;
+        }
+
+        .content ul {
+            font-size: 0.26rem;
+            text-indent: 0;
+        }
+
+        .subtitle {
+            font-size: 0.28rem;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        // // rem定位
+        // (function (doc, win) {
+        //     var docEl = doc.documentElement,
+        //         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        //         recalc = function () {
+        //             var clientWidth = docEl.clientWidth;
+        //             if (!clientWidth) return;
+        //             if (clientWidth >= 640) {
+        //                 docEl.style.fontSize = '100px';
+        //             } else {
+        //                 docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+        //             }
+        //         };
+        //     recalc();
+        // })(document, window);
+
+        const docEl = document.documentElement
+        const fontSizeBase = 96
+        const gapWidth = 640
+        function getSize() {
+            var clientWidth = docEl.clientWidth
+            if (!clientWidth) return;
+            let scale = clientWidth / gapWidth
+            if (scale > 1) scale = 1
+            docEl.style.fontSize = fontSizeBase * scale + 'px';
+        }
+        getSize()
+        window.addEventListener('resize', getSize)
+        setTimeout(() => {
+            docEl.style.transition = '0.3s all';
+        }, 1)
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        第三方信息共享清单
+    </div>
+
+    <div class="content">
+        <p style="margin-bottom: 0;">更新日期：2025年06月24日</p>
+        <p style="margin-top: 0;">生效日期：2025年06月24日</p>
+
+        <p>本清单仅适用于武汉脚印猫科技有限公司（以下简称「我们」）的产品「织个网」及其相关服务。</p>
+
+        <p>
+            您的个人信息安全对我们来说至关重要，一直以来，我们都尽全力保护您的个人信息安全，致力于维持您对我们的信任。我们将依据相关法律法规和技术规范收集和使用您的个人信息，以帮助我们向您提供更优质的产品和服务。同时，我们承诺会对您的个人信息和其他数据进行严格保密，确保您的个人信息安全。
+        </p>
+
+        <p>
+            当你使用第三方提供的服务时，我们会在获得或确保第三方获得你的授权同意后，以及其他符合法律规定的情形下共享对应信息。你可以通过本清单中列举的相关信息了解第三方会如何处理你的个人信息。我们会对第三方获取个人信息的行为进行严格约束，以保护你的个人信息安全。
+        </p>
+
+        <p>
+            为保障本软件稳定运行或实现相关功能，我们还可能会接入第三方提供的软件开发包(SDK)实现前述目的。我们对接入的相关第三方SDK同时在以下清单中列明。你可以通过目录中提供的链接或路径查看第三方的数据使用和保护规则。请注意，第三方SDK可能由于版本升级、策略调整等原因导致其个人信息处理类型发生变化，请以其公式的官方说明为准。
+        </p>
+
+
+        <!-- https://developer.umeng.com/docs/147377/detail/213789 -->
+        <div class="sdk-block">
+            <div class="subtitle">友盟移动统计SDK</div>
+            <!-- docs: https://developer.umeng.com/docs/147377/detail/210108 -->
+            <p><b>SDK名称：</b>友盟移动统计SDK</p>
+            <p><b>使用目的：</b>进行APP数据统计分析</p>
+            <p><b>运营主体：</b>友盟同欣（北京）科技有限公司</p>
+            <p>
+                <b>收集个人信息类型：</b>
+                设备信息（IMEI/MAC/Android ID/IDFA/OAID/OpenUDID/GUID/SIM卡IMSI/ICCID）、位置信息、网络信息
+            </p>
+            <p>
+                <b>隐私权政策链接：</b><!--
+                 --><a target="_blank" href="https://www.umeng.com/page/policy">《友盟+ 隐私政策》</a>
+            </p>
+            <p>
+                <b>官网链接：</b><!--
+                 --><a target="_blank" href="https://www.umeng.com/">https://www.umeng.com/</a>
+            </p>
+        </div>
+
+        <!-- https://docs.jiguang.cn/jpush/client/jghgzy_a_i_h#sdk%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96%E6%8A%AB%E9%9C%B2%E8%A6%81%E6%B1%82%E4%B8%8E%E7%A4%BA%E4%BE%8B -->
+        <div class="sdk-block">
+            <div class="subtitle">极光推送 SDK</div>
+            <!-- docs: https://developer.umeng.com/docs/147377/detail/210108 -->
+            <p><b>SDK名称：</b>极光推送 SDK</p>
+            <p><b>使用目的：</b>为 APP 用户提供信息推送服务</p>
+            <p><b>运营主体：</b>深圳市和讯华谷信息技术有限公司</p>
+            <p><b>数据处理方式：</b>通过去标识化、加密传输及其他安全方式</p>
+            <p>
+                <b>收集个人信息类型：</b>
+                设备标识符（包括Android ID、GAID、OAID、UAID、IDFA、AAID、Boot
+                ID）、设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称、设备存储空间）、操作系统信息（包括操作系统版本、系统名称、系统语言）、网络信息（包括网络类型、运营商信息、IP地址、DHCP、WIFI状态信息）、推送信息日志：必要个人信息，用于推送服务基本业务功能场景中生成脱敏的终端用户设备唯一性标识，保证服务在不同设备上的兼容性和准确识别，同时了解推送信息送达的情况。设备标识符（包括IMEI、MAC、IMSI）：可选个人信息，用于推送服务基本业务功能场景中生成终端用户设备唯一标识的补充，提升唯一设备标识的准确性，进而提升推送的精确度和触达率；网络信息（包括SSID、BSSID、WIFI列表信息、基站信息、SIM卡状态）：可选个人信息，用于推送服务基本业务功能场景中判定模糊位置信息，选择就近推送服务节点提供推送服务，提升推送触达率。<b>位置相关信息：</b>地理围栏、用户分群推送、用户洞察扩展功能所必要个人信息，用于提供线下场景的精细化推送，根据位置信息推荐更符合您需要的推送内容；软件列表信息（包括软件列表及软件运行列表信息）：用户分群、应用自启动、链路调节器、用户洞察扩展功能所必要个人信息：有助于帮助您洞察您终端用户的兴趣偏好，帮助您为用户提供更合适的推送内容，同时优化SDK长连接稳定性，提升推送送达率及应用活跃度及通过合并链路，达到为用户省电省流量的目的。
+            </p>
+            <p>
+                <b>隐私权政策链接：</b><!--
+                 --><a target="_blank" href="https://www.jiguang.cn/license/privacy">《AURORA 极光隐私政策》</a>
+            </p>
+            <p>
+                <b>官网链接：</b><!--
+                 --><a target="_blank" href="https://www.jiguang.cn/">https://www.jiguang.cn/</a>
+            </p>
+        </div>
+
+    </div>
+
+    <style>
+        .sdk-block {
+            margin-bottom: 0.36em;
+        }
+
+        .sdk-block p {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-indent: 0;
+        }
+    </style>
+</body>
+
+</html>
